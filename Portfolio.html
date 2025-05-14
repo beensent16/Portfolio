@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="PortfolioDesign.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Header -->
+        <!-- Branding -->
+        <div class="branding">Vincent</div>
+        
+        <!-- Hamburger Menu -->
+        <button class="hamburger" id="hamburgerBtn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Body -->
+        <!-- The Home Section -->
+        <section id="home" class="active">
+            <div class="home-content">
+                <!-- Top text (It is I, Dattsi) -->
+                <p class="top-text">It is I, <span>Dattsi</span></p>
+                
+                <!-- Image -->
+                <img src="Pictures/Me1.jpg" alt="Vincent's Face">
+                <img src="Pictures/Me4.png" alt="Vincent's Second Face" class="img-hover">
+                
+                <!-- Bottom text (Introducing my Portfolio) -->
+                <p class="bottom-text">Introducing my Portfolio</p>
+            </div>
+        </section>
+
+
+
+        <!-- The About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="Pictures/Face1.png" alt="Vincent's Face">
+            <img src="Pictures/Face4.png" alt="Vincent's Second Face" class="img-hover">
+            
+            <div class="about-container">
+                <div class="about-box">
+                    <h3>Introduction</h3>
+                    <p>My name is Vincent Jade F. Datiles, a 3rd-year BSCpE student at MMCM. Born on June 16, 2003, I currently reside in Davao City. My hobbies include listening to music, playing video games, video editing, drawing, and more. I am known for being friendly and balanced between introversion and extroversion. I'm particularly interested in smart individuals, creative artists, and music composers, as their intelligence captivates my curiosity.</p>
+                </div>
+                
+                <div class="about-box">
+                    <h3>Education</h3>
+                    <p class="education-header">Malayan Colleges Mindanao – Bachelor of Science in Computer Engineering (2022 - Present)</p>
+                    <p><strong>Relevant Coursework:</strong></p>
+                    <ul>
+                        <li>Introduction to Computer Engineering</li>
+                        <li>Programming Fundamentals</li>
+                        <li>Operating Systems</li>
+                        <li>Software Design and Architecture</li>
+                        <li>Web Development</li>
+                        <li>Database Management Systems</li>
+                        <li>Data Structures and Algorithms</li>
+                    </ul>
+                </div>
+                
+                <div class="about-box">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Video Editing</li>
+                        <li>Graphic Design</li>
+                        <li>Web Development</li>
+                        <li>Programming (C++, Python, JavaScript)</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!-- The Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <!-- Videographer  -->
+            <div class="experience-item">
+                <img src="Pictures/Videographer.png" alt="Cameraman">
+                <div class="experience-content">
+                    <h3>Videographer - Regeneration at Christian Life Center Davao</h3>
+                    <p><strong>Duration:</strong> June 2024 - Present</p>
+                    <p>As a Videographer for Regeneration at Christian Life Center Davao, I am responsible for capturing high-quality video footage during various church events, including promotional content and worship services. My role involves setting up and operating multiple cameras, ensuring optimal shot composition, and working closely with the media team to capture the best visuals for both live and pre-recorded events.</p>
+                </div>
+            </div>
+
+            <!-- Video Editor -->
+            <div class="experience-item">
+                <img src="Pictures/VideoEditor.png" alt="Video Editor">
+                <div class="experience-content">
+                    <h3>Video Editor - Regeneration at Christian Life Center Davao</h3>
+                    <p><strong>Duration:</strong> June 2024 - Present</p>
+                    <p>As a Video Editor for Regeneration at Christian Life Center Davao, I am tasked with editing the footage captured during events. This includes cutting and assembling video clips, adding transitions and effects, and ensuring that the final product meets the desired quality and style. I collaborate with the media team to create engaging and polished videos for various church events and promotional activities.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- The Project Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+
+                <!-- Project 1 -->
+                <div class="project-item" data-project="project1">
+                    <img src="Pictures/Regen1.png" alt="Project 1 Image">
+                    <div class="project-description">
+                        <h3>Highlights of Regeneration 1</h3>
+                        <p>This is the first edit I did on the first week of June for the Highlights of Regeneration.</p>
+                    </div>
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="project-item" data-project="project2">
+                    <img src="Pictures/Regen2.png" alt="Project 2 Image">
+                    <div class="project-description">
+                        <h3>Highlights of Regeneration 2</h3>
+                        <p>This is the second edit I did for the second week of June for the Highlights of Regeneration.</p>
+                    </div>
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="project-item" data-project="project3">
+                    <img src="Pictures/Regen3.png" alt="Project 3 Image">
+                    <div class="project-description">
+                        <h3>Highlights of Regeneration 3</h3>
+                        <p>This would be the third edit I did for the third week of June for the Highlights of Regeneration.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item" data-project="project4">
+                    <img src="Pictures/Regen4.png" alt="Project 4 Image">
+                    <div class="project-description">
+                        <h3>Highlights of Regeneration 4</h3>
+                        <p>This is the fourth edit I did for the last week of June for the Highlights of Regeneration.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-item" data-project="project5">
+                    <img src="Pictures/Regen5.png" alt="Project 5 Image">
+                    <div class="project-description">
+                        <h3>Highlights of Regeneration 5</h3>
+                        <p>This is the fifth edit I did for the month of July for the Highlights of Regeneration.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-item" data-project="project6">
+                    <img src="Pictures/Regen6.png" alt="Project 6 Image">
+                    <div class="project-description">
+                        <h3>Highlights of Regeneration 6</h3>
+                        <p>This is the sixth edit I did for the month of August for the Highlights of Regeneration.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Modal -->
+            <div id="project-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img id="modal-img" src="" alt="Project Image">
+                    <h2 id="modal-title">Project Title</h2>
+                    <p id="modal-desc">Project Description</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <!-- Footer -->
+        <p>&copy; 2024 | Vincent Jade F. Datiles | All Rights Reserved</p>
+        <p>Email: vjDatiles@gmail.com | Phone: 09608620361</p>
+        <p>Social: <a href="https://www.facebook.com/vjdatts/"> Facebook  </a> | Regeneration Videos: <a href="https://www.facebook.com/ReGenYRCR">Regeneration</a></p>
+    </footer>
+
+    <script src="PortfolioAnimate.js"></script>
+
+</body>
+
+</html>
